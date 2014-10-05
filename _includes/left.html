@@ -5,23 +5,6 @@
 		<div id="logo">
 			<h2>椭圆的前端之路</h2>
 		</div>			
-	<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li class="current_page_item"><a href="#">最新文章</a></li>
-				<li>
-					<a id="list">文章分类</a>
-                    <ul style="display:none;">
-                    	<li class="current_list"><a href="frontend.html">前端技术</a></li>
-                    	<li class="current_list"><a href="test.html">笔试面试</a></li>
-                    	<li class="current_list"><a href="layout.html">网站布局</a></li>
-                    </ul>
-
-				</li>
-				<li><a href="aboutme.html">关于作者</a></li>
-			</ul>
-		</nav>
-
 	<!-- categories -->
 		<section class="is-recent-comments">
 			<header>
@@ -32,7 +15,7 @@
 			</span>{{ category | last | size }}</span>
 			<ul>
 			    {% for post in category.last %}
-			        <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+			        <li class="current_list">{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li> 
 			    {% endfor %}
 			</ul>
 			{% endfor %}
