@@ -1,0 +1,13 @@
+---
+layout: mylayout
+title: 凑个数先
+subTitle: 我是打酱油的
+date:   2014-09-01 16:22:58
+---
+
+
+<a href="#" class="image image-full"><img src="/images/fotogrph-dark-stairwell.jpg" alt="" /></a>
+<p>
+	<a href="http://www.cnblogs.com/2050/p/3191744.html">跨域知识总结</a>
+	<a href="http://www.w3cfuns.com/blog-5441847-5400405.html">雅虎前端优化34条</a>
+</p>
