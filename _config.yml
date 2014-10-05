@@ -1,6 +1,6 @@
 title: 椭圆的前端之路
 encoding: utf-8
-baseurl: "" 
+baseurl: /
 twitter_username: jekyllrb
 github_username:  jekyll
 paginate: 5
