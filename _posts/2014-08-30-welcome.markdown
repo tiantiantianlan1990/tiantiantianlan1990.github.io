@@ -5,7 +5,7 @@ subTitle: 响应式布局网站学习的开端
 date:   2014-08-30 15:58:58
 ---
 
-<a href="#" class="image image-full"><img src="images/girl.jpg" alt="" /></a>
+<a href="#" class="image image-full"><img src="/images/girl.jpg" alt="" /></a>
 <p>
 	<strong>大家好!</strong> 这是我的网站的第一篇文章，仅以此文纪念漫漫前端路的开始，希望可以坚持下去。
 </p>
