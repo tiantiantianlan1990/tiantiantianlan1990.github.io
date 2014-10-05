@@ -3,31 +3,18 @@ layout: default
 ---
 <body class="left-sidebar">
 		<!-- Wrapper -->
-			<div id="wrapper">
-				<!-- Content -->
-					<div id="content">
-						<div id="content-inner">
-							<ul class="post-list">
-								{% for post in paginator.posts %}
-								 <li>
-								 	 <h2> <a href="{{ post.url }}">{{ post.title }}</a></h2>
-								 </li> 
-								{% endfor %}
-							 </ul>			
-							<!-- Pager -->
-								<div class="pager">
-									<!--<a href="#" class="button previous">Previous Page</a>-->
-									<div class="pages">
-										<a href="#" class="active">1</a>
-										<a href="#">2</a>
-										<a href="#">3</a>
-										<a href="#">4</a>
-										<span>&hellip;</span>
-										<a href="#">20</a>
-									</div>
-									<a href="#" class="button next">Next Page</a>
-								</div>
-						</div>
-					</div>
+	<div id="wrapper">
+		<!-- Content -->
+		<div id="content">
+			<div id="content-inner">
+				<ul class="post-list">
+					{% for post in paginator.posts %}
+					 <li>
+					 	 <h2> <a href="{{ post.url }}">{{ post.title }}</a></h2>
+					 </li> 
+					{% endfor %}
+				 </ul>			
 			</div>
+		</div>
+	</div>
 </body>
