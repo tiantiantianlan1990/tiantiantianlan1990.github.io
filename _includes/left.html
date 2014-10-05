@@ -27,12 +27,15 @@
 			<header>
 				<h2>标签</h2>
 			</header>
+			{% for category in site.categories %}
+			<h2>{{ category | first }}</h2>
+			</span>{{ category | last | size }}</span>
 			<ul>
-				<li><a href="#">jQuery</a></li>
-				<li><a href="#">HTML</a></li>
-				<li><a href="#">CSS</a></li>
-				<li><a href="#">javascript</a></li>
+			    {% for post in category.last %}
+			        <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
+			    {% endfor %}
 			</ul>
+			{% endfor %}
 		</section>
 
 	<!-- Copyright -->
