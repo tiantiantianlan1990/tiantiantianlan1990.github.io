@@ -15,7 +15,8 @@ layout: default
 					{% endfor %}
 				 </ul>			
 			</div>
-			{% if paginator.total_pages > 1 %}
+		</div>
+		{% if paginator.total_pages > 1 %}
 				{% if paginator.previous_page %}
 				    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"上一页</a>
 				{% endif %}
@@ -32,6 +33,5 @@ layout: default
 				    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
 				{% endif %}
 			{% endif %}
-		</div>
 	</div>
 </body>
