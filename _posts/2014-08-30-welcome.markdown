@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: mylayout
 title: 欢迎来到我的博客
 subTitle: 响应式布局网站学习的开端
 date:   2014-08-30 15:58:58
