@@ -180,7 +180,6 @@
 		width: 14em; /* = whatever you want */
 		background: #364050 url('images/bg1.png');
 		box-shadow: inset -0.1em 0em 0.35em 0em rgba(0,0,0,0.15);
-		overflow: scroll;
 	}
 
 		body.left-sidebar #sidebar
