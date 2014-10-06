@@ -7,9 +7,9 @@
 		</div>			
 	<!-- Nav -->
 		<nav id="nav">
+			<h2>分类</h2>
 			{% for category in site.categories %}
-				<h2>{{ category | first }}</h2>
-				</span>{{ category | last | size }}</span>
+				<h2>{{ category | first }}(</span>{{ category | last | size }}</span>)</h2>
 <!-- 				<ul class="arc-list">
 				    {% for post in category.last %}
 				        <li>{{ post.date | date:"%d/%m/%Y"}}<a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -19,14 +19,6 @@
 		</nav>
 
 	<!-- categories -->
-		<section class="is-recent-comments">
-			<header>
-				<h2>标签</h2>
-			</header>
-			{% for tag in site.tags %}
-			    <a href="/show_by_tag.html?tag={{ tag[0] }}"> {{ tag[0] }}</a>
-			{% endfor %}
-		</section>
 
 	<!-- Copyright -->
 		<div id="copyright">
