@@ -1,4 +1,11 @@
-<article class="is-post is-post-excerpt">
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="left-sidebar">
+    <div id="wrapper">
+    <article class="is-post is-post-excerpt">
 	<header>
 		<h2><a href="#">{{ page.title }}</a></h2>
 		<span class="byline">{{ page.subTitle }}</span>
@@ -7,4 +14,12 @@
 		<span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
 	</div>
 	{{ content }}
-</article>
+    </article>
+    {% include left.html %}
+    </div>
+  </body>
+
+</html>
+
+
+
