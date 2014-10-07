@@ -10,9 +10,9 @@ categories: HTML5
 ###HTML5的拖放###
 ***
 在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。目前，Internet Explorer 9、Firefox、Opera 12、Chrome 以及 Safari 5 支持拖放。
-***
+
 对于被拖动的元素来说，它将依次触发ondragstart和ondrag事件，并在拖放结束时触发ondragend事件。
-而对于拖放的目的地元素来说，它将依次触发ondragenter,ondragover,ondrop事件
+而对于拖放的目的地元素来说，它将依次触发ondragenter,ondragover,ondrop事件。
 
 {% endraw %}
 
