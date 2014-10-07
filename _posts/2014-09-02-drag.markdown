@@ -18,6 +18,7 @@ categories: HTML5
 			{
 			ev.dataTransfer.setData("Text",ev.target.id);
 			}
+	  ```
 把要拖动元素的id传给Text.
 对于被拖动的元素来说，它将依次触发ondragstart和ondrag事件，并在拖放结束时触发ondragend事件。
 
