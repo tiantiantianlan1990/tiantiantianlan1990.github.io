@@ -13,6 +13,7 @@ categories: HTML5
 
 首先，在HTML标签中，给要拖动的元素设置draggable 属性为true。然后，规定当元素被拖动时，会发生什么。dataTransfer.setData() 方法设置被拖数据的数据类型和值。
 例：
+
 ```function drag(ev)
 	{
 	ev.dataTransfer.setData("Text",ev.target.id);
