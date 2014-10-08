@@ -6,10 +6,13 @@ date:   2014-09-02 16:22:58
 categories: HTML5
 ---
 {% raw %} 
-###HTML5的拖放###
-***
-在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。目前，Internet Explorer 9、Firefox、Opera 12、Chrome 以及 Safari 5 支持拖放。
+# HTML5的拖放
 
+标签（空格分隔）： HTML5
+
+---
+
+在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。目前，Internet Explorer 9、Firefox、Opera 12、Chrome 以及 Safari 5 支持拖放。
 首先，在HTML标签中，给要拖动的元素设置draggable 属性为true。然后，规定当元素被拖动时，会发生什么。dataTransfer.setData() 方法设置被拖数据的数据类型和值。
 例：
 
@@ -27,7 +30,9 @@ function drag(ev)
 ondragover 事件规定在何处放置被拖动的数据。
 默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
 
-```event.preventDefault();```
+```
+event.preventDefault();
+```
 
 最后，来规定如何放置元素
 
