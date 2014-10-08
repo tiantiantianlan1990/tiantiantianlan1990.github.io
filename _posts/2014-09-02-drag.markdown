@@ -1,46 +1,47 @@
 ---
 layout: mylayout
-title: æ‹–æ”¾
+title: ÍÏ·Å
 subTitle: 
 date:   2014-09-02 16:22:58
 categories: HTML5
 ---
 
-{% raw %}
-###HTML5çš„æ‹–æ”¾###
+###HTML5µÄÍÏ·Å###
 ***
-åœ¨ HTML5 ä¸­ï¼Œæ‹–æ”¾æ˜¯æ ‡å‡†çš„ä¸€éƒ¨åˆ†ï¼Œä»»ä½•å…ƒç´ éƒ½èƒ½å¤Ÿæ‹–æ”¾ã€‚ç›®å‰ï¼ŒInternet Explorer 9ã€Firefoxã€Opera 12ã€Chrome ä»¥åŠ Safari 5 æ”¯æŒæ‹–æ”¾ã€‚
+ÔÚ HTML5 ÖĞ£¬ÍÏ·ÅÊÇ±ê×¼µÄÒ»²¿·Ö£¬ÈÎºÎÔªËØ¶¼ÄÜ¹»ÍÏ·Å¡£Ä¿Ç°£¬Internet Explorer 9¡¢Firefox¡¢Opera 12¡¢Chrome ÒÔ¼° Safari 5 Ö§³ÖÍÏ·Å¡£
 
-é¦–å…ˆï¼Œåœ¨HTMLæ ‡ç­¾ä¸­ï¼Œç»™è¦æ‹–åŠ¨çš„å…ƒç´ è®¾ç½®draggable å±æ€§ä¸ºtrueã€‚ç„¶åï¼Œè§„å®šå½“å…ƒç´ è¢«æ‹–åŠ¨æ—¶ï¼Œä¼šå‘ç”Ÿä»€ä¹ˆã€‚dataTransfer.setData() æ–¹æ³•è®¾ç½®è¢«æ‹–æ•°æ®çš„æ•°æ®ç±»å‹å’Œå€¼ã€‚
-ä¾‹ï¼š
+Ê×ÏÈ£¬ÔÚHTML±êÇ©ÖĞ£¬¸øÒªÍÏ¶¯µÄÔªËØÉèÖÃdraggable ÊôĞÔÎªtrue¡£È»ºó£¬¹æ¶¨µ±ÔªËØ±»ÍÏ¶¯Ê±£¬»á·¢ÉúÊ²Ã´¡£dataTransfer.setData() ·½·¨ÉèÖÃ±»ÍÏÊı¾İµÄÊı¾İÀàĞÍºÍÖµ¡£
+Àı£º
 
-```html
+~~~
 function drag(ev)
  {
   ev.dataTransfer.setData("Text",ev.target.id);
  }
-```
+~~~
 
-æŠŠè¦æ‹–åŠ¨å…ƒç´ çš„idä¼ ç»™Text.
-å¯¹äºè¢«æ‹–åŠ¨çš„å…ƒç´ æ¥è¯´ï¼Œå®ƒå°†ä¾æ¬¡è§¦å‘ondragstartå’Œondragäº‹ä»¶ï¼Œå¹¶åœ¨æ‹–æ”¾ç»“æŸæ—¶è§¦å‘ondragendäº‹ä»¶ã€‚
+°ÑÒªÍÏ¶¯ÔªËØµÄid´«¸øText.
+¶ÔÓÚ±»ÍÏ¶¯µÄÔªËØÀ´Ëµ£¬Ëü½«ÒÀ´Î´¥·¢ondragstartºÍondragÊÂ¼ş£¬²¢ÔÚÍÏ·Å½áÊøÊ±´¥·¢ondragendÊÂ¼ş¡£
 
-è€Œå¯¹äºæ‹–æ”¾çš„ç›®çš„åœ°å…ƒç´ æ¥è¯´ï¼Œå®ƒå°†ä¾æ¬¡è§¦å‘ondragenter,ondragover,ondropäº‹ä»¶ã€‚
-ondragover äº‹ä»¶è§„å®šåœ¨ä½•å¤„æ”¾ç½®è¢«æ‹–åŠ¨çš„æ•°æ®ã€‚
-é»˜è®¤åœ°ï¼Œæ— æ³•å°†æ•°æ®/å…ƒç´ æ”¾ç½®åˆ°å…¶ä»–å…ƒç´ ä¸­ã€‚å¦‚æœéœ€è¦è®¾ç½®å…è®¸æ”¾ç½®ï¼Œæˆ‘ä»¬å¿…é¡»é˜»æ­¢å¯¹å…ƒç´ çš„é»˜è®¤å¤„ç†æ–¹å¼ã€‚
+¶ø¶ÔÓÚÍÏ·ÅµÄÄ¿µÄµØÔªËØÀ´Ëµ£¬Ëü½«ÒÀ´Î´¥·¢ondragenter,ondragover,ondropÊÂ¼ş¡£
+ondragover ÊÂ¼ş¹æ¶¨ÔÚºÎ´¦·ÅÖÃ±»ÍÏ¶¯µÄÊı¾İ¡£
+Ä¬ÈÏµØ£¬ÎŞ·¨½«Êı¾İ/ÔªËØ·ÅÖÃµ½ÆäËûÔªËØÖĞ¡£Èç¹ûĞèÒªÉèÖÃÔÊĞí·ÅÖÃ£¬ÎÒÃÇ±ØĞë×èÖ¹¶ÔÔªËØµÄÄ¬ÈÏ´¦Àí·½Ê½¡£
 
-      event.preventDefault();
+~~~event.preventDefault();~~~
 
-æœ€åï¼Œæ¥è§„å®šå¦‚ä½•æ”¾ç½®å…ƒç´ 
+×îºó£¬À´¹æ¶¨ÈçºÎ·ÅÖÃÔªËØ
 
-	  function drop(ev)
-		{
-		ev.preventDefault();
-		var data=ev.dataTransfer.getData("Text");
-		ev.target.appendChild(document.getElementById(data));
-		}
+~~~
+function drop(ev)
+	{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+	}
+~~~
 
-ä¸‹é¢æ˜¯w3cschoolä¸Šç»™å‡ºçš„ä¾‹å­ï¼š
-```html
+ÏÂÃæÊÇw3cschoolÉÏ¸ø³öµÄÀı×Ó£º
+~~~html
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -68,6 +69,6 @@ ondragover äº‹ä»¶è§„å®šåœ¨ä½•å¤„æ”¾ç½®è¢«æ‹–åŠ¨çš„æ•°æ®ã€‚
 	ondragstart="drag(event)" width="336" height="69" />
   </body>
 </html>
-```
-{% endraw %}
+~~~
+
 
