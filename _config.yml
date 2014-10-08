@@ -1,13 +1,7 @@
 title: 椭圆的前端之路
 encoding: utf-8
 baseurl: /
-twitter_username: jekyllrb
-github_username:  jekyll
 paginate: 5
 paginate_path: "page:num"
 pygments: true
-markdown: maruku
-maruku:
-  use_tex:    false
-  use_divs:   false
-  fenced_code_blocks: true
+markdown: kramdown
