@@ -14,7 +14,7 @@ categories: HTML5
 首先，在HTML标签中，给要拖动的元素设置draggable 属性为true。然后，规定当元素被拖动时，会发生什么。dataTransfer.setData() 方法设置被拖数据的数据类型和值。
 例：
 
-```javascript
+```html
 function drag(ev)
  {
   ev.dataTransfer.setData("Text",ev.target.id);
@@ -40,37 +40,34 @@ ondragover 事件规定在何处放置被拖动的数据。
 		}
 
 下面是w3cschool上给出的例子：
-
-		<!DOCTYPE HTML>
-		<html>
-		<head>
-		<script type="text/javascript">
-		function allowDrop(ev)
-		{
-		ev.preventDefault();
-		}
-
-		function drag(ev)
-		{
-		ev.dataTransfer.setData("Text",ev.target.id);
-		}
-
-		function drop(ev)
-		{
-		ev.preventDefault();
-		var data=ev.dataTransfer.getData("Text");
-		ev.target.appendChild(document.getElementById(data));
-		}
-		</script>
-		</head>
-		<body>
-
-		<div id="div1" ondrop="drop(event)"
-		ondragover="allowDrop(event)"></div>
-		<img id="drag1" src="img_logo.gif" draggable="true"
-		ondragstart="drag(event)" width="336" height="69" />
-
-		</body>
-		</html>
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function allowDrop(ev)
+{
+ev.preventDefault();
+}
+function drag(ev)
+{
+ev.dataTransfer.setData("Text",ev.target.id);
+}
+function drop(ev)
+{
+ev.preventDefault();
+var data=ev.dataTransfer.getData("Text");
+ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+<div id="div1" ondrop="drop(event)"
+ondragover="allowDrop(event)"></div>
+<img id="drag1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="336" height="69" />
+</body>
+</html>
+```
 {% endraw %}
 
