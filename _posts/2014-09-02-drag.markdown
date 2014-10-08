@@ -5,7 +5,7 @@ subTitle:
 date:   2014-09-02 16:22:58
 categories: HTML5
 ---
-
+{% raw %} 
 ###HTML5的拖放###
 ***
 在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。目前，Internet Explorer 9、Firefox、Opera 12、Chrome 以及 Safari 5 支持拖放。
@@ -70,5 +70,6 @@ function drop(ev)
   </body>
 </html>
 ```
+{% endraw %}
 
 
