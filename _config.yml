@@ -4,5 +4,6 @@ baseurl: /
 paginate: 5
 paginate_path: "page:num"
 permalink: /:year/:month/:day/:title
-exclude: ["node_modules", "Gruntfile.js", "package.json", "src"]
-markdown: Kramdown
+markdown: redcarpet
+redcarpet:
+extensions: ["fenced_code_blocks", "tables", "highlight", "strikethrough"]

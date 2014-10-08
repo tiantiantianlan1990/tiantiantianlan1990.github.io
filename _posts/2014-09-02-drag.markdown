@@ -40,7 +40,7 @@ ondragover 事件规定在何处放置被拖动的数据。
 		}
 
 下面是w3cschool上给出的例子：
-~~~html
+```html
 <!DOCTYPE HTML>
 <html>
   <head>
@@ -68,6 +68,6 @@ ondragover 事件规定在何处放置被拖动的数据。
 	ondragstart="drag(event)" width="336" height="69" />
   </body>
 </html>
-~~~
+```
 {% endraw %}
 
