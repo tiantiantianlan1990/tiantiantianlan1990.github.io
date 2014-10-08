@@ -1,10 +1,80 @@
 ---
 layout: mylayout
-title: �Ϸ�
+title: 拖放
 subTitle: 
 date:   2014-09-02 16:22:58
 categories: HTML5
 ---
+{% raw %} 
+# HTML5的拖放
 
+标签（空格分隔）： HTML5
+
+---
+
+在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。目前，Internet Explorer 9、Firefox、Opera 12、Chrome 以及 Safari 5 支持拖放。
+首先，在HTML标签中，给要拖动的元素设置draggable 属性为true。然后，规定当元素被拖动时，会发生什么。dataTransfer.setData() 方法设置被拖数据的数据类型和值。
+例：
+
+```
+function drag(ev)
+ {
+  ev.dataTransfer.setData("Text",ev.target.id);
+ }
+```
+
+把要拖动元素的id传给Text.
+对于被拖动的元素来说，它将依次触发ondragstart和ondrag事件，并在拖放结束时触发ondragend事件。
+
+而对于拖放的目的地元素来说，它将依次触发ondragenter,ondragover,ondrop事件。
+ondragover 事件规定在何处放置被拖动的数据。
+默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，我们必须阻止对元素的默认处理方式。
+
+```
+event.preventDefault();
+```
+
+最后，来规定如何放置元素
+
+```
+function drop(ev)
+	{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+	}
+```
+
+下面是w3cschool上给出的例子：
+```html
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<script type="text/javascript">
+	function allowDrop(ev)
+	{
+	ev.preventDefault();
+	}
+	function drag(ev)
+	{
+	ev.dataTransfer.setData("Text",ev.target.id);
+	}
+	function drop(ev)
+	{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("Text");
+	ev.target.appendChild(document.getElementById(data));
+	}
+	</script>
+  </head>
+  <body>
+	<div id="div1" ondrop="drop(event)"
+	ondragover="allowDrop(event)"></div>
+	<img id="drag1" src="img_logo.gif" draggable="true"
+	ondragstart="drag(event)" width="336" height="69" />
+  </body>
+</html>
+```
+{% endraw %}
 
 
